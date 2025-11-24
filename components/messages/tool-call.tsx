@@ -32,7 +32,7 @@ const TOOL_DISPLAY_MAP: Record<string, ToolDisplay> = {
     },
 };
 
-const DEFAULT_TOOL_DISPLAY: ToolDisplay = { call_label: "Using tool", call_icon: <Globe className="w-4 h-4" />, result_label: "Used tool", result_icon: <Wrench className="w-4 h-4" /> };
+const DEFAULT_TOOL_DISPLAY: ToolDisplay = { call_label: "Using tool", call_icon: <Wrench className="w-4 h-4" />, result_label: "Used tool", result_icon: <Wrench className="w-4 h-4" /> };
 
 function extractToolName(part: ToolCallPart | ToolResultPart): string | undefined {
     const partWithType = part as unknown as { type?: string; toolName?: string };
